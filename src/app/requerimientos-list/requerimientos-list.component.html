@@ -1,0 +1,51 @@
+<h5>Requerimientos de Adquisiciones</h5>
+<table mat-table [dataSource]="this.dataSource" class="mat-elevation-z8">
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="Id">
+    <th mat-header-cell *matHeaderCellDef>Id.</th>
+    <td mat-cell *matCellDef="let element">{{ element.Id }}</td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="Number">
+    <th mat-header-cell *matHeaderCellDef>Number</th>
+    <td mat-cell *matCellDef="let element">{{ element.Number }}</td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="AcquisitionDate">
+    <th mat-header-cell *matHeaderCellDef>AcquisitionDate</th>
+    <td mat-cell *matCellDef="let element">{{ element.AcquisitionDate }}</td>
+  </ng-container>
+  <ng-container matColumnDef="Type">
+    <th mat-header-cell *matHeaderCellDef>Type</th>
+    <td mat-cell *matCellDef="let element">{{ element.Type }}</td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="BusinessUnity">
+    <th mat-header-cell *matHeaderCellDef>BusinessUnity</th>
+    <td mat-cell *matCellDef="let element">{{ element.BusinessUnity }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Quantity">
+    <th mat-header-cell *matHeaderCellDef>Quantity</th>
+    <td mat-cell *matCellDef="let element">{{ element.Quantity }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="UnitaryValue">
+    <th mat-header-cell *matHeaderCellDef>UnitaryValue</th>
+    <td mat-cell *matCellDef="let element">{{ element.UnitaryValue }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="TotalAmount">
+    <th mat-header-cell *matHeaderCellDef>TotalAmount</th>
+    <td mat-cell *matCellDef="let element">{{ element.TotalAmount }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="this.displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: this.displayedColumns"></tr>
+</table>
