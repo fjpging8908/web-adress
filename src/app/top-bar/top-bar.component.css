@@ -1,5 +1,21 @@
 h1 {
-  font-size: larger;
+  font-size: 30px;
+  color: #009C9A;  
+  font-family: normal normal 600 13.5px 'Montserrat';
+}
+.logo {
+  width: 128px;
+  margin: 0 180px;  
+  align-content: end;
+  
+}
+
+.DivContent{
+  display: flex;  
+}
+
+:host{
+  background-color: white;
 }
 /*
 Copyright Google LLC. All Rights Reserved.

@@ -1,0 +1,93 @@
+h5 {
+    font-size: 30px;
+    color: #009C9A;
+    font-family: normal normal 600 13.5px 'Montserrat';
+    margin-top: 30px;
+    text-align: left;
+}
+
+.DivTittle {
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F5;
+    margin: 0.;
+    padding: 0;
+}
+
+.example-container {
+    margin-top: 50px;
+}
+
+.example-container mat-form-field+mat-form-field {
+    margin-left: 5px;
+}
+
+.example-container mat-form-field {
+    width: 210px;
+    height: 70px;
+}
+
+.example-container form {
+    margin-bottom: 5px;
+}
+
+.example-container form>* {
+    margin: 5px 0;
+}
+
+.example-container .mat-radio-button {
+    margin: 0 5px;
+}
+
+.example-form-fields {
+    display: flex;
+    align-items: flex-start;
+    font-size: 10px;
+    color: #009C9A;
+}
+
+section {
+    display: table;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+
+    h1 {
+        font-size: 30px;
+        color: #009C9A;
+        font-family: normal normal 600 13.5px 'Montserrat';
+    }
+
+    min-width: 120px;
+}
+
+.example-button-row {
+    display: table-cell;
+    max-width: 600px;
+    margin: 5px;
+}
+
+.example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ButonAgregar {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    margin: 5px;
+}
+
+mat-form-field{
+    color: #009C9A;
+    font-size: 10px;
+}

@@ -12,6 +12,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AdresApiService } from './services/adres-api.service';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import { RequerimientosDetailComponent } from './requerimientos-detail/requerimientos-detail.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
+    RequerimientosDetailComponent,
+    RequerimientosListComponent,
     RouterModule.forRoot([
       { path: '', component: RequerimientosListComponent },
     ]),
